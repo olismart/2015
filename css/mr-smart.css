@@ -12,28 +12,47 @@ h1{
 	text-transform: uppercase;
 	font-size: 5em;
 	line-height: 1;
-	color: #37505c;
+	color: #6a7fdb;
+}
+.underline-cap{
+	font-size: 80%;
+	text-decoration: underline;
+	position: relative;
+	bottom: 0.16em;
+}
+h2{
+	text-transform: uppercase; 
+	font-weight: 300;
+	font-size: 1.25em;
+	letter-spacing: 0.1em;
+	margin-bottom: 0;
 }
 aside{
 	margin: 0;
 	font-size: 75%;
 	font-style: italic;
-	color: #113537;
+	color: #f76f8e;
 }
 p{
 	margin: 1.5em 0;
 	font-size: 1.25em;
-	color: #113537;
+	color: #37505c;
 }
 section{
 	margin-top: 8em;
 }
 a{
-	display: block;
-	margin: 0.3em 0;
+	display: inline-block;
+	margin: 0.5em  1em 0.5em 0;
 	text-decoration: none;
-	color: #6a7fdb;
+	background: #6a7fdb;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 0.25em;
+	width: 6em;
+	text-align: center;
 }
 a:hover{
-	color: #f76f8e;
+	background: #f76f8e;
+	box-shadow: 0px 1px 3px #37505c;
 }
