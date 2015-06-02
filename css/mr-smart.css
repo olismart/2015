@@ -1,5 +1,5 @@
 body{
-	padding: 0;
+	padding: 0 0 15em 0;
 	margin: 2em 2em;
 	font-family: 'Merriweather', serif;
 	font-size: 100%;
@@ -7,16 +7,16 @@ body{
 	background: #ffeed9;
 }
 h1{
-	margin: 1em 0 0 0;
+	margin: 0.75em 0 0 0;
 	font-family: 'bebas', sans-serif;
 	text-transform: uppercase;
-	font-size: 5em;
+	font-size: 4.5em;
 	line-height: 1;
 	color: #6a7fdb;
 }
 .underline-cap{
 	font-size: 80%;
-	text-decoration: underline;
+	text-decoration: underline; /* Doesn't play well with firefox - look at medium.com link underline solution? */
 	position: relative;
 	bottom: 0.16em;
 }
@@ -26,6 +26,7 @@ h2{
 	font-size: 1.25em;
 	letter-spacing: 0.1em;
 	margin-bottom: 0;
+	color: #37505c;
 }
 aside{
 	margin: 0;
@@ -34,25 +35,29 @@ aside{
 	color: #f76f8e;
 }
 p{
-	margin: 1.5em 0;
+	margin: 1.5em 0 0 0;
 	font-size: 1.25em;
 	color: #37505c;
+	font-weight: 300;
+}
+p+p{
+	margin-top: 0.5em;
 }
 section{
 	margin-top: 8em;
 }
-a{
-	display: inline-block;
+a.social-link{
+	float: left;
 	margin: 0.5em  1em 0.5em 0;
 	text-decoration: none;
 	background: #6a7fdb;
 	color: white;
 	padding: 0.5em 1em;
 	border-radius: 0.25em;
-	width: 6em;
+	width: 5em;
 	text-align: center;
 }
-a:hover{
+a.social-link:hover{
 	background: #f76f8e;
 	box-shadow: 0px 1px 3px #37505c;
 }
