@@ -1,0 +1,39 @@
+body{
+	padding: 0;
+	margin: 2em 2em;
+	font-family: 'Merriweather', serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background: #ffeed9;
+}
+h1{
+	margin: 1em 0 0 0;
+	font-family: 'bebas', sans-serif;
+	text-transform: uppercase;
+	font-size: 5em;
+	line-height: 1;
+	color: #37505c;
+}
+aside{
+	margin: 0;
+	font-size: 75%;
+	font-style: italic;
+	color: #113537;
+}
+p{
+	margin: 1.5em 0;
+	font-size: 1.25em;
+	color: #113537;
+}
+section{
+	margin-top: 8em;
+}
+a{
+	display: block;
+	margin: 0.3em 0;
+	text-decoration: none;
+	color: #6a7fdb;
+}
+a:hover{
+	color: #f76f8e;
+}
