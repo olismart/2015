@@ -4,7 +4,7 @@ body{
 	font-family: 'Merriweather', serif;
 	font-size: 100%;
 	line-height: 1.4;
-	background: #ffeed9;
+	background: #f5f0b4;
 }
 h1{
 	margin: 0.75em 0 0 0;
@@ -40,10 +40,13 @@ p{
 	color: #37505c;
 	font-weight: 300;
 }
+p a{
+	text-decoration: underline;
+}
 p+p{
 	margin-top: 0.5em;
 }
-section{
+.links{
 	margin-top: 8em;
 }
 a.social-link{
@@ -61,3 +64,38 @@ a.social-link:hover{
 	background: #f76f8e;
 	box-shadow: 0px 1px 3px #37505c;
 }
+
+.about{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	padding: 1em;
+	background: #6a7fdb;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 0.25em;
+	max-width: 15em;
+}
+.about a{
+	color: #fff;
+	float: right;
+	text-decoration: none;
+}
+.about a:hover{
+	color: #f76f8e;
+}
+.about h3{
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #fff;
+	margin: 1.5em 0 0;
+}
+.about p{
+	color: #fff;
+	font-size: 1em;
+	margin: 0 0 1em;
+}
+
+.about-content{
+	display: none;
+} 

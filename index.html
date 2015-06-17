@@ -24,19 +24,29 @@
 		</section>
 	</body>
 
+
+
+	<section class='about'>
+		<a href='#' id='open-about'>?</a>
+		<div class='about-content'>
+			<h3>About this site</h3>
+			<p>This site is an experiment in 'designing in the browser' - I'm building it as I go, without any prior planning or sketching. Or, for that matter, any idea what I really want to make in the end. It's also a sandbox for me to test new coding ideas and techniques, and scope out some of the newer web technologies. All without the worry of breaking a client project.</p>
+			<p>The whole thing is on <a href='https://github.com/olismart' title='Oli Smart on Github'>github</a>, so if you're interested you can take a look at how it's evolved.</p>
+		</div>
+	</section>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$( '#open-about' ).click(function() {
+			$( '.about-content' ).toggle( 'slow' );
+		});
+
+	</script>
+
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
-<!-- About 
-	<section class='about'>
-		<a href='*' id='open-about'>WTF?</a>
-		<a href='*' id='open-about'>Close</a>
-		<h2>About this site</h2>
-		<p>This site is an experiment in 'designing in the browser' - I'm building it as I go, without any prior planning or sketching. Or, for that matter, any idea what I really want to make in the end. It's also a sandbox for me to test new coding ideas and techniques, and scope out some of the newer web technologies. All without the worry of breaking a client project.</p>
-		<p>The whole thing is on <a href='' title=''>github</a>, so if you're interested you can take a look at how it's evolved.</p>
-	</section>
-
-	-->
 
 </html>
