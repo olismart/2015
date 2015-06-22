@@ -19,11 +19,11 @@
 			<p>Lettering a speciality.</p>
 			<section class='links'>
 				<h2>Say hello:</h2>
-				<a href='mailto:oli@olismart.co.uk' title='Email me' class='social-link'>email</a>
-				<a href='https://www.flickr.com/natenautilus' title='On Flickr' class='social-link'>flickr</a>
-				<a href='https://www.instagram.com/lettershepherd' title='On Instagram' class='social-link'>Instagram</a>
-				<a href='http://lettershepherd.co.uk' title='On tumblr' class='social-link'>tumblr</a>
-			
+				<a href='mailto:oli@olismart.co.uk' title='Email me' class='social-link' id='social1'>email</a>
+				<a href='https://www.flickr.com/natenautilus' title='On Flickr' class='social-link' id='social2'>flickr</a>
+				<a href='https://www.instagram.com/lettershepherd' title='On Instagram' class='social-link' id='social3'>Instagram</a>
+				<a href='http://lettershepherd.co.uk' title='On tumblr' class='social-link' id='social4'>tumblr</a>
+			</section>
 				<div class='cd-modal-action'>
 					<a href='#0' class='btn' data-type='modal-trigger'>Wtf?</a>
 					<span class='cd-modal-bg'></span>
@@ -38,7 +38,7 @@
 				</div><!-- Close cd-modal -->
 
 				<a href="#0" class="cd-modal-close">Close</a>
-			</section>
+			
 		</section>
 
 	</body>
@@ -49,14 +49,23 @@
 
 	<script>
 		$( document ).ready(function() {
-			$('.social-link').velocity({
-				marginTop: 0,
-				opacity: 1
-			}, 700)
-			.velocity({
-				marginTop: '1em'
-			});
+			$('#social1').velocity({ opacity: 1, marginTop: '-1em'}, {delay: 100})
+			.velocity({ marginTop: '0.5em'}),
+			$('#social2').velocity({ opacity: 1, marginTop: '-1em'}, {delay: 200})
+			.velocity({ marginTop: '0.5em'})
+			$('#social3').velocity({ opacity: 1, marginTop: '-1em'}, {delay: 300})
+			.velocity({ marginTop: '0.5em'}),
+			$('#social4').velocity({ opacity: 1, marginTop: '-1em'}, {delay: 400})
+			.velocity({ marginTop: '0.5em'})
 		});
 	</script>
+
+
+	<!--<script>
+		$( document ).ready(function() {
+			$('.social-link').velocity({ opacity: 1, marginTop: '-1em'}, {delay: 100})
+			.velocity({ marginTop: '0.5em'})
+		});
+	</script>-->
 
 </html>
