@@ -4,6 +4,7 @@ body{
 	font-family: 'Merriweather', serif;
 	font-size: 100%;
 	line-height: 1.4;
+  font-weight: 300;
 	background: #f5f0b4;
 }
 body.overflow-hidden {
@@ -70,32 +71,6 @@ a.social-link:hover{
 }
 
 /*-----  MODAL  -------------------------------------------------------------*/
-.cd-section {
-  padding: 2em 5%;
-  text-align: center;
-  background-color: #03bb91;
-}
-.cd-section p {
-  margin: 2em 0;
-  line-height: 1.6;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media only screen and (min-width: 768px) {
-  .cd-section {
-    padding: 4em 10%;
-  }
-  .cd-section p {
-    font-size: 1.8rem;
-    line-height: 2;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-section {
-    padding: 4em 20%;
-  }
-}
 
 .cd-modal {
   position: fixed;
@@ -125,17 +100,27 @@ a.social-link:hover{
 }
 .cd-modal .cd-modal-content {
   height: 100%;
-  width: 100%;
+  max-width: 30em;
+  margin: 0 auto;
   padding: 3em 5%;
   text-align: left;
   overflow-y: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.cd-modal h3{
+  color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 0.35em;
 }
 .cd-modal p {
   color: #ffffff;
-  line-height: 1.6;
-  margin: 2em 0;
+  margin: 0 0 1em;
+}
+.cd-modal p a{
+  color: inherit;
+  text-decoration: underline;
+}
+.cd-modal p a:hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 .modal-is-visible .cd-modal {
   z-index: 1;
@@ -149,38 +134,26 @@ a.social-link:hover{
 .modal-is-visible .cd-modal .cd-modal-content {
   -webkit-overflow-scrolling: touch;
 }
-@media only screen and (min-width: 768px) {
-  .cd-modal .cd-modal-content {
-    padding: 4em 10%;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-modal .cd-modal-content {
-    padding: 6em 20%;
-  }
-  .cd-modal p {
-    font-size: 2rem;
-    line-height: 2;
-  }
-}
 
 .cd-modal-action {
-  position: relative;
+  position: absolute;
+  top: 2em;
+  right: 2em;
 }
 .cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
   display: inline-block;
   height: 4em;
-  background-color: #34383c;
+  background-color: #6a7fdb;
 }
 .cd-modal-action .btn {
-  width: 12.5em;
+  width: 6em;
   border-radius: 5em;
   color: #ffffff;
   line-height: 4em;
   white-space: nowrap;
   font-weight: 700;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
   -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
   transition: color 0.2s 0.3s, width 0.3s 0s;
